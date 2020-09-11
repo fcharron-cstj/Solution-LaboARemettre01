@@ -1,29 +1,41 @@
-//But : Écrire un programme qui vérifie que le nombre entré est de 5 chiffre et qui va les placer sur 5 lignes verticalement
-//Auteur : Frédéric Charron
+//But : Ã‰crire un programme qui vÃ©rifie que le nombre entrÃ© est de 5 chiffre et qui va les placer sur 5 lignes verticalement
+//Auteur : FrÃ©dÃ©ric Charron
 //Date : 08/09/2020
 
 #include <iostream>
-#include <conio.h>
-using namespace std;
-int main() {
-	int a, b, c, d, e;
 
-	a = _getch();
-	cout << char(a);
-	b = _getch();
-	cout << char(b);
-	c = _getch();
-	cout << char(c);
-	d = _getch();
-	cout << char(d);
-	e = _getch();
-	cout << char(e);
-	
-	cout << "\nOutput:\n";
-	cout << char(a) << "\n";
-	cout << char(b) << "\n";
-	cout << char(c) << "\n";
-	cout << char(d) << "\n";
-	cout << char(e) << "\n";
+
+
+int main()
+{
+	setlocale(LC_ALL, "");
+
+	int nombre;
+
+	std::cout << " Veuillez entrer un nombre entier de 5 chiffres ";
+
+	std::cin >> nombre;
+
+	if (nombre >= 10000)
+
+	{
+
+		std::cout << nombre;
+		std::cout << "\n";
+		std::cout << nombre;
+		std::cout << "\n";
+		std::cout << nombre;
+		std::cout << "\n";
+		std::cout << nombre;
+		std::cout << "\n";
+		std::cout << nombre;
+	}
+	else
+	{
+		std::cout << " Le nombre n'est pas de 5 chiffres";
+
+
+	}
+
 	return 0;
 }
