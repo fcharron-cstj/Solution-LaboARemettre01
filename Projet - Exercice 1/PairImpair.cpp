@@ -1,24 +1,25 @@
-//But : CrÈer un programme qui peut dÈterminer si le nombre que l'utilisateur entre dans le programme est pair ou impair.
-//Auteur : FrÈdÈric Charron
+//But : Cr√©er un programme qui peut d√©terminer si le nombre que l'utilisateur entre dans le programme est pair ou impair.
+//Auteur : Fr√©d√©ric Charron
 //Date : 08/09/2020
 
 #include <iostream>
 
-using namespace std;
-
 int main()
 {
-	setlocale(LC_ALL, "");
+	setlocale(LC_ALL, "");		//Accents
 
-	int num;
-	cin >> num;				//Le nombre qu'on entre dans le programme
-	if (num % 2 == 0)
-		cout << num << " est pair";
+	int nombre;
+	
+	std::cout << " Veuillez entrer un nombre entier";	//Le programme demande d'entrer un nombre
+	std::cin >> nombre;	//Le nombre qu'on entre dans le programme
+	if (nombre % 2 == 0)		//Le programme calcule le nombre%2, si la r√©ponse est 0, il envoie le message disant que le nombre est pair, sinon, il envoie que le nombre est impair.
+		std::cout << nombre << " est pair";
 	else
-		cout << num << " est impair";
+		std::cout << nombre << " est impair";
 
 	//Test1 :  12 --> est pair
 	//Test2 :  13 --> est impair
-
+	//Test3 :  0  --> est pair
+	//Test4 : -17 --> est impair
 	return 0;
 }
